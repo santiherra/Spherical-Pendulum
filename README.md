@@ -3,7 +3,7 @@ Animation of a simple pendulum with free 3D motion
 
 # Theoretical Frame
 ## Lagrange Formalism
-The system to study consists on a point particle of mass $m$, attached to a pivot point by a massless rigid rod of length $l$. The position of the particle is then subject to the constraint $\vec{r}^2-l^2 = 0$. Then, we have 2 degrees of freedom (1 part, 3D, 1 const), so we require 2 generalized coordinates. It is convenient to use the polar (here, wrt the negative z axis) and azimuthal angles from spherical coordinates: 
+The system to study consists on a point particle of mass $m$, attached to a pivot point by a massless rigid rod of length $l$. The position of the particle is then subject to the constraint $\vec{r}^2-l^2 = 0$. Then, we have 2 degrees of freedom (1 part, 3D, 1 const), so we require 2 generalized coordinates. It is convenient to use the polar (here, $wrt$ the negative z axis) and azimuthal angles from spherical coordinates: 
 $$\vec{q} = (\theta, \phi) \ , \ \vec{r} = l(\sin(\theta)\cos(\phi), \sin(\theta)\sin(\phi), -\cos(\theta))$$
 
 The forces acting on the particle are the gravitational pull, $\vec{F}_g = -mg\vec{e}_z$ and the string force, $\vec{F}_s$. For the first one, the force is conservative, with $\vec{F}_g = -\nabla V$, $V = mgz$. On the other hand, if we consider any virtual displacement $\vec{r}(u)$, it will be tangential to the circle of radius $l$, and the string force is assumed to be $\vec{F}_s = F_s \vec{e}_r$, so $\vec{F}_s \parallel \frac{d}{du}\vec{r}du$, so the Principle of Virtual Work is satisfied. Under these circumstances, the Lagrangian formalism can be applied, with a Lagrangian $L = T-V$.
@@ -18,7 +18,7 @@ $$L(t, \vec{q}, \dot{\vec{q}}) = \frac{1}{2}\left[\dot{\theta}^2+sin^2(\theta)\d
 
  The Energy Integral (a.k.a Jacobi Integral) is defined as $h = \vec{p} \cdot \dot{\vec{q}}-L$. 
 
- $$ h = \frac{1}{2}\left[\dot{\theta}^2+\sin^2(\theta)\dot{\phi}^2\right]-\omega_0^2\cos(\theta)= \frac{1}{2}\left[\dot{\theta}^2+\frac{p_{\phi}^2}{\sin^2(theta)}\right]-\omega_0^2\cos(\theta) = \frac{1}{2}\dot{\theta}^2+U(\theta)$$
+ $$ h(t, \vec{q}, \dot{\vec{q}}) = \frac{1}{2}\left[\dot{\theta}^2+\sin^2(\theta)\dot{\phi}^2\right]-\omega_0^2\cos(\theta)= \frac{1}{2}\left[\dot{\theta}^2+\frac{p_{\phi}^2}{\sin^2(theta)}\right]-\omega_0^2\cos(\theta) = \frac{1}{2}\dot{\theta}^2+U(\theta)$$
 
  where $U(\theta) = \frac{p_{\phi}^2}{2sin^2(\theta)}-\omega_0^2cos(\theta)$ is the effective potential.
 
