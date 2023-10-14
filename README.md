@@ -18,9 +18,9 @@ $$L(t, \vec{q}, \dot{\vec{q}}) = \frac{1}{2}\left[\dot{\theta}^2+sin^2(\theta)\d
 
  The Energy Integral (a.k.a Jacobi Integral) is defined as $h = \vec{p} \cdot \dot{\vec{q}}-L$. 
 
- $$ h = \frac{1}{2}\left[\dot{\theta}^2+\sin^2(\theta)\dot{\phi}^2\right]-\omega_0^2\cos(\theta)$$
+ $$ h = \frac{1}{2}\left[\dot{\theta}^2+\sin^2(\theta)\dot{\phi}^2\right]-\omega_0^2\cos(\theta)= \frac{1}{2}\left[\dot{\theta}^2+\frac{p_{\phi}^2}{\sin^2(theta)}\right]-\omega_0^2\cos(\theta) = \frac{1}{2}\dot{\theta}^2+U(\theta)$$
 
- where $U(\theta) = \frac{p_{\phi}^2}{sin^2(\theta)}-\omega_0^2cos(\theta)$ is the effective potential.
+ where $U(\theta) = \frac{p_{\phi}^2}{2sin^2(\theta)}-\omega_0^2cos(\theta)$ is the effective potential.
 
  Notice that $\frac{\partial L}{\partial t}=0$, then $\frac{dh}{dt} = 0$, so $h$ is also a constant of motion.
 
