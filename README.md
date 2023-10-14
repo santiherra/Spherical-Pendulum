@@ -16,7 +16,8 @@ $$L(t, \vec{q}, \dot{\vec{q}}) = \frac{1}{2}\left[\dot{\theta}^2+sin^2(\theta)\d
  $$\vec{p}= \frac{\partial L}{\partial \dot{\vec{q}}} \implies p_{\theta} = \frac{\partial L}{\partial \dot{\theta}} = \dot{\theta} \ , \  p_{\phi} = \frac{\partial L}{\partial \dot{\phi}} = sin^2(\theta)\dot{\phi}$$
  As $\frac{\partial L}{\partial \phi}= 0$, so then $p_{\phi}$ is a constant of motion.
 
- The Energy Integral (a.k.a Jacobi Integral) is defined as $h = \vec{p} \cdot \dot{\vec{q}}$. 
+ The Energy Integral (a.k.a Jacobi Integral) is defined as $h = \vec{p} \cdot \dot{\vec{q}}-L$. 
+
  $$ h = \frac{1}{2}\left[\dot{\theta}^2+\sin^2(\theta)\dot{\phi}^2\right]-\omega_0^2\cos(\theta)$$
 
  where $U(\theta) = \frac{p_{\phi}^2}{sin^2(\theta)}-\omega_0^2cos(\theta)$ is the effective potential.
@@ -28,5 +29,7 @@ $$L(t, \vec{q}, \dot{\vec{q}}) = \frac{1}{2}\left[\dot{\theta}^2+sin^2(\theta)\d
  $$\dot{\phi} = \frac{p_{\phi}}{\sin^2(\theta)} \ , \ h = \frac{1}{2}\theta^2+U(\theta)$$
 
 The second one is equivalent to a particle of unit mass under a 1D potential. We can solve the system by integrating the equation: 
-$$ \int_{\theta_0}^\theta \frac{d \alpha}{\sqrt{h-U(\theta)}} = \pm \sqrt{2}t$$
+
+$$ \int_{\theta_0}^\theta \frac{d \alpha}{\sqrt{h-U(\alpha)}} = \pm \sqrt{2}t$$
+
 with $(\theta(0), \phi(0)) = (\theta_0, \phi_0)$.
