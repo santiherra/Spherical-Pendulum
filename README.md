@@ -25,15 +25,25 @@ $$L(t, \vec{q}, \dot{\vec{q}}) = \frac{1}{2}\left[\dot{\theta}^2+sin^2(\theta)\d
  Notice that $\frac{\partial L}{\partial t}=0$, then $\frac{dh}{dt} = 0$, so $h$ is also a constant of motion.
 
  ## Integrating the system
- We have obtained a system of ODE's:
+  We have obtained a system of ODE's:
  $$\dot{\phi} = \frac{p_{\phi}}{\sin^2(\theta)} \ , \ h = \frac{1}{2}\theta^2+U(\theta)$$
 
 The second one is equivalent to a particle of unit mass under a 1D potential. We can solve the system by integrating the equation: 
 
 $$ \int_{\theta_0}^\theta \frac{d \alpha}{\sqrt{h-U(\alpha)}} = \pm \sqrt{2}t$$
 
-with $(\theta(0), \phi(0)) = (\theta_0, \phi_0)$. Let us perform the change 
+with $(\theta(0), \phi(0)) = (\theta_0, \phi_0)$.
+ ### Planar case
 
-$$u = \frac{cos(\alpha)}{\kappa} \ , \ \kappa = cos(\alpha_0) \implies du = -\frac{sin(\alpha)}{\kappa} d\alpha \ ; \ \alpha = \theta_0 \rightarrow u = 1 \ , \ \ \alpha = \theta_0 \rightarrow u = \frac{cos(\theta)}{\kappa} = \eta(\theta)$$. 
+ ### General case
+Now, we confront a more general system, where $\dot{\phi}(0) = \dot{\phi}_0 \neq 0$. Let us perform the change 
 
-$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \mp \frac{\sqrt{2}}{\kappa}t \ ; \ P(u) = \left(h-\frac{p_{phi}^2}{2}\right)+\omega_0^2\kappa u-h\kappa^2 u^2-\omega_0^2 \kappa^3 u^3$$
+$$u = \frac{cos(\alpha)}{\kappa} \ , \ \kappa = cos(\alpha_0) \implies du = -\frac{sin(\alpha)}{\kappa} d\alpha \ ; \ \alpha = \theta_0 \rightarrow u = 1 \ , \ \ \alpha = \theta_0 \rightarrow u = \frac{cos(\theta)}{\kappa} = \eta(\theta)$$
+
+$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \mp \sqrt{\frac{2}{\kappa}}t \ ; \ P(u) = \left(h-\frac{p_{\phi}^2}{2}\right)+\omega_0^2\kappa u-h\kappa^2 u^2-\omega_0^2 \kappa^3 u^3$$
+
+Let us denote $\beta_1>\beta_2>\beta_3$ ($\beta_1, \beta_2, \beta_3 \in \mathbb{R}$) the roots of $P(u)$. We are now ready to perform a reduction of the integral to Incomplete Elliptic Integrals of the First Kind, following the instructions by Abramowitz \& Stegun (pg. 597, 17.4.62):
+
+$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \int_{\beta_1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}}+\int_{1}^{\beta_1}\frac{du}{\sqrt{P(u)}} = \mp \sqrt{\frac{2}{\kappa^2}}t$$
+
+
