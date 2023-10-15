@@ -44,10 +44,12 @@ $$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \mp \sqrt{\frac{2}{\kappa^2}}
 
 Let us denote $\beta_1>\beta_2>\beta_3$ ($\beta_1, \beta_2, \beta_3 \in \mathbb{R}$) the roots of $P(u)$. We are now ready to perform a reduction of the integral to Incomplete Elliptic Integrals of the First Kind, following the instructions by Abramowitz \& Stegun (pg. 597, 17.4.62):
 
-$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \int_{\beta_1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}}-\int_{\beta_1}^{1}\frac{du}{\sqrt{P(u)}} = \frac{1}{\lambda}\left[F(\phi ; m)-F(1 ; m)\right]$$
+$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \int_{\beta_1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}}-\int_{\beta_1}^{1}\frac{du}{\sqrt{P(u)}} = \frac{1}{\lambda}\left[F(\varphi \ ; \ m)-F(\varphi_0 \ ; \ m)\right]$$
 
-$$\lambda = \frac{1}{2}\sqrt{\beta_1-\beta_3} \ ; \ m = \frac{\beta_2-\beta_3}{\beta_1-\beta_3} \ ; \ sin^2(\phi) = \frac{\eta(\theta)-\beta_3}{\beta_2-\beta_3}$$
+$$\lambda = \frac{1}{2}\sqrt{\beta_1-\beta_3} \ ; \ m = \frac{\beta_2-\beta_3}{\beta_1-\beta_3} \ ; \ sin^2(\phi) = \frac{\eta(\theta)-\beta_3}{\beta_2-\beta_3} \ ; \ \varphi_0 = \sin^{-1}\left(\sqrt{\frac{1-\beta_3}{\beta_2-\beta_3}}\right)$$
 
-with $F(\phi ; m)$ is the Incomplete Elliptic Integral of the First Kind.
+with $F(\phi \ ; \ m)$ is the Incomplete Elliptic Integral of the First Kind. We are then left with
+
+$$ F(\varphi \ ; \ m) = F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \implies sin^2(\varphi) = sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t\right)  $$
 
 
