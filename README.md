@@ -52,6 +52,10 @@ with $F(\phi \ ; \ m)$ is the Incomplete Elliptic Integral of the First Kind. We
 
 $$ F(\varphi \ ; \ m) = F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \implies sin^2(\varphi) = sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)  $$
 
-$$ \implies \theta(t) = cos^{-1}\left[\kappa \beta_2 sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)+ k \beta_3 cn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)\right]$$
+$$ \implies \theta(t) = cos^{-1}\left[\kappa \beta_2 sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)+ \kappa \beta_3 cn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)\right]$$
+
+In order to obtain $\phi (t)$, we need to recall: $\dot(\phi) = \frac{p_{\phi}}{sin^2(\theta)}$. Integrating:
+
+$$ \phi (t) = \phi_0+p_{\phi}\int_{0}^t\frac{d\tau}{sin^2(\theta(\tau))} $$
 
 
