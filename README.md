@@ -40,10 +40,14 @@ Now, we confront a more general system, where $\dot{\phi}(0) = \dot{\phi}_0 \neq
 
 $$u = \frac{cos(\alpha)}{\kappa} \ , \ \kappa = cos(\alpha_0) \implies du = -\frac{sin(\alpha)}{\kappa} d\alpha \ ; \ \alpha = \theta_0 \rightarrow u = 1 \ , \ \ \alpha = \theta_0 \rightarrow u = \frac{cos(\theta)}{\kappa} = \eta(\theta)$$
 
-$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \mp \sqrt{\frac{2}{\kappa}}t \ ; \ P(u) = \left(h-\frac{p_{\phi}^2}{2}\right)+\omega_0^2\kappa u-h\kappa^2 u^2-\omega_0^2 \kappa^3 u^3$$
+$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \mp \sqrt{\frac{2}{\kappa^2}}t \ ; \ P(u) = \left(h-\frac{p_{\phi}^2}{2}\right)+\omega_0^2\kappa u-h\kappa^2 u^2-\omega_0^2 \kappa^3 u^3$$
 
 Let us denote $\beta_1>\beta_2>\beta_3$ ($\beta_1, \beta_2, \beta_3 \in \mathbb{R}$) the roots of $P(u)$. We are now ready to perform a reduction of the integral to Incomplete Elliptic Integrals of the First Kind, following the instructions by Abramowitz \& Stegun (pg. 597, 17.4.62):
 
-$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \int_{\beta_1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}}+\int_{1}^{\beta_1}\frac{du}{\sqrt{P(u)}} = \mp \sqrt{\frac{2}{\kappa^2}}t$$
+$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \int_{\beta_1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}}-\int_{\beta_1}^{1}\frac{du}{\sqrt{P(u)}} = \frac{1}{\lambda}\left[F(\phi ; m)-F(1 ; m)\right]$$
+
+$$\lambda = \frac{1}{2}\sqrt{\beta_1-\beta_3} \ ; \ m = \frac{\beta_2-\beta_3}{\beta_1-\beta_3} \ ; \ sin^2(\phi) = \frac{\eta(\theta)-\beta_3}{\beta_2-\beta_3}$$
+
+with $F(\phi ; m)$ is the Incomplete Elliptic Integral of the First Kind.
 
 
