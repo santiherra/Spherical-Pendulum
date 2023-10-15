@@ -32,6 +32,8 @@ The second one is equivalent to a particle of unit mass under a 1D potential. We
 
 $$ \int_{\theta_0}^\theta \frac{d \alpha}{\sqrt{h-U(\alpha)}} = \pm \sqrt{2}t$$
 
-with $(\theta(0), \phi(0)) = (\theta_0, \phi_0)$. As $h$ is constant, we have $h = \frac{1}{2}\dot{\theta}_0^2+\frac{p_{\phi}^2}{2sin(\theta)}^2-\omega_0^2cos(\theta)$. Let us perform the change 
+with $(\theta(0), \phi(0)) = (\theta_0, \phi_0)$. Let us perform the change 
 
-$$u = cos(\alpha)/k \ , \ k = cos(\alpha_0) \implies du = -sin(\alpha)/k d\alpha \ ; \ \alpha = \theta_0 \rightarrow u = 1 \ , \ \ \alpha = \theta_0 \rightarrow u = cos(\theta)/k = \eta(\theta)$$. 
+$$u = \frac{cos(\alpha)}{\kappa} \ , \ \kappa = cos(\alpha_0) \implies du = -\frac{sin(\alpha)}{\kappa} d\alpha \ ; \ \alpha = \theta_0 \rightarrow u = 1 \ , \ \ \alpha = \theta_0 \rightarrow u = \frac{cos(\theta)}{\kappa} = \eta(\theta)$$. 
+
+$$ \int_{1}^{\eta(\theta)}\frac{du}{\sqrt{P(u)}} = \mp \frac{\sqrt{2}}{\kappa}t \ ; \ P(u) = \left(h-\frac{p_{phi}^2}{2}\right)+\omega_0^2\kappa u-h\kappa^2 u^2-\omega_0^2 \kappa^3 u^3$$
