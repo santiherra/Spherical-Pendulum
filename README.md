@@ -50,6 +50,8 @@ $$\lambda = \frac{1}{2}\sqrt{\beta_1-\beta_3} \ ; \ m = \frac{\beta_2-\beta_3}{\
 
 with $F(\phi \ ; \ m)$ is the Incomplete Elliptic Integral of the First Kind. We are then left with
 
-$$ F(\varphi \ ; \ m) = F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \implies sin^2(\varphi) = sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t\right)  $$
+$$ F(\varphi \ ; \ m) = F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \implies sin^2(\varphi) = sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)  $$
+
+$$ \implies \theta(t) = cos^{-1}\left[\kappa \beta_2 sn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)+ k \beta_3 cn^2\left(F(\varphi_0 \ ; \ m)\mp \lambda \sqrt{\frac{2}{\kappa^2}}t \ ; \ m \right)\right]$$
 
 
